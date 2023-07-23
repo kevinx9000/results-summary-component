@@ -1,0 +1,222 @@
+/********** MOBILE FIRST DESIGN **********/
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    /* gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* RESET BROWSER STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pale-blue);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.125rem;
+}
+
+.content-wrapper {
+    width: 375px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 40px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+
+/* YOUR RESULT - CARD */
+.your-result-card {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0 0 40px 40px;
+}
+
+.your-result-card h2 {
+    color: var(--light-lavender);
+}
+
+.total-score-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    min-width: 150px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#total-score-num {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.of-100 {
+    color: var(--light-lavender);
+}
+
+#word-rating {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+#percentage-text {
+    width: 80%;
+    color: var(--light-lavender);
+    margin-bottom: 30px;
+}
+
+/* SUMMARY - CARD */
+.summary-card {
+    padding: 0 30px 15px;
+}
+
+.summary-card h2 {
+    margin: 30px 0;
+}
+
+/* VALUE BOXES */
+.value-box {
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
+.value-box h3 {
+    margin-left: 10px;
+}
+
+.value-box p {
+    margin-left: auto;
+}
+
+.slash-100 {
+    opacity: 0.35;
+}
+
+#reaction-box {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+#reaction-box h3 {
+    color: hsl(0, 100%, 67%);
+}
+
+#memory-box {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    margin: 15px 0;
+}
+
+#memory-box h3 {
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal-box {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    margin: 15px 0;
+}
+
+#verbal-box h3 {
+    color: hsla(166, 100%, 37%);
+}
+
+#visual-box {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+#visual-box h3 {
+    color: hsl(234, 85%, 45%);
+}
+
+.btn {
+    background-color: var(--dark-gray-blue);
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 30px 0;
+    width: 100%;
+    border-radius: 40px;
+    padding: 10px 0;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+/* FOOTER */
+footer {
+    margin: 20px auto;
+    padding: 10px 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/***** RESPONSIVE - TABLET AND LARGER *****/
+@media only screen and (min-width:768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-wrapper {
+        width: 650px;
+        display: flex;
+    }
+
+    .your-result-card {
+        border-radius: 40px;
+        width: 325px;
+    }
+
+    .total-score-circle {
+        min-width: 175px;
+        min-height: 175px;
+    }
+
+    .summary-card {
+        width: 325px;
+        padding: 0 30px;
+    }
+}
