@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: var(--pale-blue);
+    background-color: white;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 1.125rem;
 }
@@ -37,6 +37,7 @@ body {
     margin: 0 auto;
     background-color: white;
     border-radius: 40px;
+    box-shadow: 10px 5px 20px var(--pale-blue);
 }
 
 h2 {
