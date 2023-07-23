@@ -40,7 +40,9 @@ body {
     box-shadow: 10px 5px 20px var(--pale-blue);
 }
 
-h2 {
+
+
+h1, h2 {
     font-size: 1.25rem;
     margin-top: 30px;
 }
@@ -57,7 +59,7 @@ h2 {
     border-radius: 0 0 40px 40px;
 }
 
-.your-result-card h2 {
+.your-result-card h1 {
     color: var(--light-lavender);
 }
 
